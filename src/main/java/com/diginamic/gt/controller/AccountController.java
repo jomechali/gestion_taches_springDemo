@@ -34,7 +34,7 @@ public class AccountController {
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(path = "signup")
     public String signup(@RequestBody Employee employee) throws BadRequestException {
-        emailService.sendSimpleMessage("jmechali@diginamic-formation.fr", "TEST ENVOI AUTO", "YEAH!!!!!");
+        //emailService.sendSimpleMessage("jmechali@diginamic-formation.fr", "TEST ENVOI AUTO", "YEAH!!!!!");
         return accountService.signup(employee);
     }
 
